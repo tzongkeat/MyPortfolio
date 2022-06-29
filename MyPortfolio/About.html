@@ -1,0 +1,195 @@
+﻿
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Personal Website</title>
+</head>
+<body>
+
+
+    <nav class="contain">
+        <div class="links"> <a href="Portfolio.html" style="color:white" class="time">Portfolio</a></div>
+
+        <div class="links">  <a href="About.html" style="color:white">About</a></div>
+    </nav>
+    <h1><u>  Hi, I am OngTzongKeat</u></h1>
+    <div class="profilepic">
+        <img src="profilepicture.jpeg" alt="Admin" class="rounded-circle p-1 bg-warning" width="110">
+        <form id="aboutme">
+            <h1><u>About Me</u></h1>
+
+            <p>Hello, I am a fresh graduate software engineer. I graduated from TARUC with Bacherlors Degree in InformationTechnology(Software Development). Currently 23 persueing my interest in frontend development.Skills that I have acquired: </p>
+            <ul class="dashed">
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>C#</li>
+            </ul>
+        </form>
+    </div>
+
+
+
+
+    <form id="socials">
+        <li> Click <a href="https://www.linkedin.com/in/tzong-keat-ong-12a07921b/">here</a> for LinkedIn</li>
+        <li>WhatsApp:  <a href="https://wa.me/+601133002272">011-3300 2272 </a></li>
+        <li>Reach me at my email: ongtzongkeat@gmail.com </li>
+
+    </form>
+
+
+
+    <form target="_blank" id="feedback" action="https://formsubmit.co/ongtzongkeat@gmail.com" method="POST">
+        <h1>Get in touch with me</h1>
+        <input type="text" name="name" class="form-control" rows="2" placeholder="Your Full Name" required>
+
+        <div>
+            <textarea placeholder="Your message" class="form-control2" name="message" rows="10" required></textarea>
+        </div>
+        <button type="submit" class="button">Submit Form</button>
+    </form>
+
+
+
+
+</body>
+</html>
+
+
+<style>
+    ul {
+        text-align: left;
+        margin: 0;
+       
+    }
+
+
+
+        ul.dashed {
+         
+            list-style-type: "-";
+        }
+
+          
+
+    .contain {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: black;
+        color: #fff;
+    }
+
+    .form-control {
+        width: 399px;
+    }
+
+    .form-control2 {
+        width: 400px;
+    }
+
+    #feedback {
+        text-align: center;
+        width: 450px;
+        margin-left: 35%;
+        margin-top: 100px;
+        color: #333333;
+        background-color: transparent
+    }
+
+    #socials {
+        text-align: left;
+        width: 450px;
+        margin-left: 35%;
+        margin-top: 100px;
+        color: black;
+        background-color: transparent;
+    }
+
+        #socials a {
+            text-decoration: none;
+            background-color: #EEEEEE;
+            color: #333333;
+            padding: 1.5px 4px 1.5px 4px;
+            border-top: 1px solid #CCCCCC;
+            border-right: 1px solid #333333;
+            border-bottom: 1px solid #333333;
+            border-left: 1px solid #CCCCCC;
+        }
+
+    #aboutme {
+        margin-left: 45%;
+        text-align: left;
+        margin-left: 36.5%;
+        width: 450px;
+        color: black;
+        background-color: transparent
+    }
+
+    .aboutme2 {
+        text-align: left;
+    }
+
+    .profilepic {
+        text-align: center
+    }
+
+    nav {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    ul a {
+        color: blue;
+    }
+
+    body {
+        background: #648880;
+        background: linear-gradient(to right, #f6f1d3, #648880 85%, #293f50);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+        animation: fadeInAnimation ease 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+        body:hover {
+            transition: transform .4s ease-in-out;
+            transform: scale(1.02)
+        }
+
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    h1 {
+        color: #333333;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    .links {
+        color: white;
+        display: block;
+        text-decoration: none;
+        padding: 1rem;
+    }
+
+        .links:after {
+            content: "|";
+            margin-left: 5px;
+        }
+
+        .links:before {
+            content: "|";
+            margin-left: 1rem;
+        }
+</style>

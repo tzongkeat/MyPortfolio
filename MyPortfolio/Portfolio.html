@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+
+    <nav class="contain">
+        <div class="links"> <a href="Portfolio.html" style="color:white" class="time">Portfolio</a></div>
+        <div class="links">  <a href="About.html" style="color:white">About</a></div>
+    </nav>
+
+    <h1>Portfolio</h1>
+    <div class="row">
+        <form id="form1" runat="server">
+
+            <u><b class="smalltitle">Education</b></u>
+            <div class="container">
+
+                <b class="title">Tunku Abdul Rahman University College, Kuala Lumpur</b>
+
+
+                <div>
+                    From 2020 to 2022
+                    <div>
+                        Awarded with merit in Bachelor's degree in Informatiozn Techonology.<div>Courses included are:</div>
+                        <div style=" display:inline-block;  text-align:left;">
+                            <li>Software project management</li>
+                            <li>Data Structures and Algorithm</li>
+                            <li>Web Application Development</li>
+                            <li class="auto-style1">Object Oriented Analysis and Design</li>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <b class="title">Tunku Abdul Rahman University College, Kuala Lumpur</b>
+                </div>
+                <div>
+                    From 2017 to 2020
+                </div>
+                <div>
+                    Awarded with merit in Diploma in Information Techonology.<div>Courses included are:</div>
+                    <div style=" display:inline-block;  text-align:left;">
+                        <li>Web Design and Development</li>
+                        <li>Database Development and Applications</li>
+                        <li>Object Oriented Programming Techniques</li>
+                        <li>GUI and Web Application Programming</li>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form id="form2">
+
+            <u><b class="smalltitle">Work Experience</b></u>
+            <div><b class="intern">Teneo Technologies Sdn Bhd</b></div>
+            <div>
+                From January to July in 2022
+            </div>
+            <div style="display:inline-block; text-align:left" ;>
+                <li>Creating a website and implementing API</li>
+                <li>Test out for bugs of company product</li>
+                <li>Make changes to client website</li>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+
+<style>
+    .work {
+        text-align: left;
+    }
+
+    .contain {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: black;
+        color: #fff;
+    }
+
+    .links {
+        color: white;
+        display: block;
+        text-decoration: none;
+        padding: 1rem;
+    }
+
+        .links:after {
+            content: "|";
+            margin-left: 5px;
+        }
+
+        .links:before {
+            content: "|";
+            margin-left: 1rem;
+        }
+
+    b.intern {
+        font-size: 25px;
+        text-align: center
+    }
+
+    .smalltitle {
+        font-size: 20px
+    }
+
+    #title {
+        color: darkblue;
+    }
+
+    u {
+        text-align: center;
+    }
+
+
+    h1 {
+        text-align: center;
+        color: black;
+    }
+
+    body {
+        background: #648880;
+        background: linear-gradient(to right, #f6f1d3, #648880 85%, #293f50);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+        animation: fadeInAnimation ease 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+        body:hover {
+            transition: transform .4s ease-in-out;
+            transform: scale(1.02)
+        }
+
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    body::after:hover {
+    }
+
+    #form2 {
+        color: black;
+        text-align: center;
+        word-spacing: 2px;
+        margin: 1rem 0;
+    }
+
+    .container {
+        padding-top: 5px 0px
+    }
+
+    #form1 {
+        color: black;
+        text-align: center;
+        word-spacing: 2px;
+        margin: 1rem 0;
+    }
+
+    li {
+        width: 350px;
+        position: relative;
+        height: 2.5em;
+        color: black;
+    }
+
+    div {
+        padding-top: 6px
+    }
+
+    .auto-style1 {
+        left: 0px;
+        top: 0px;
+        height: 3em;
+        margin-bottom: 0px;
+    }
+
+    .auto-style2 {
+        margin-top: 0px;
+        padding-top: 5px 0px;
+    }
+
+    .auto-style3 {
+        width: 293px;
+    }
+</style>
