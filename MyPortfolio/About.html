@@ -13,30 +13,32 @@
 
         <div class="links">  <a href="About.html" style="color:white">About</a></div>
     </nav>
+  
     <h1><u>  Hi, I am OngTzongKeat</u></h1>
     <div class="profilepic">
-        <img src="profilepicture.jpeg" alt="Admin" class="rounded-circle p-1 bg-warning" width="110">
+        <img src="profilepicture.jpeg" alt="Admin" class="rounded-circle p-1 bg-warning" width="110" style="border-radius: 50%;">
         <form id="aboutme">
-            <h1><u>About Me</u></h1>
+            <h1><u>About Me </u></h1>
 
             <p>Hello, I am a fresh graduate software engineer. I graduated from TARUC with Bacherlors Degree in InformationTechnology(Software Development). Currently 23 persueing my interest in frontend development.Skills that I have acquired: </p>
-            <ul class="dashed; " >
-                <li>JavaScript</li>
-                <li>C#</li>
-                <li>MSSQL</li>
-                <li>HTML & CSS</li>
+            <ul class="dashed ">
+                <li>
+                    <div id="changeText">
+
+                    </div>
+                </li>
             </ul>
         </form>
     </div>
 
+
     
 
-
     <form id="socials">
-        <li> Click <a href="https://www.linkedin.com/in/tzong-keat-ong-12a07921b/">here</a> for LinkedIn</li>
-        <li>WhatsApp:  <a href="https://wa.me/+601133002272">011-3300 2272 </a></li>
+        <h7>Find me at         <div id="idLinkedInIcon" onclick="window.open('https://www.linkedin.com/in/tzong-keat-ong-12a07921b/');" title="LinkedIn">in</div> </h7><div>OR</div>
+        <li>Chat with me at WhatsApp:  <a href="https://wa.me/+601133002272">011-3300 2272 </a></li> OR
         <li>Reach me at my email: ongtzongkeat@gmail.com </li>
-        
+
     </form>
 
 
@@ -44,18 +46,34 @@
     <form target="_blank" id="feedback" action="https://formsubmit.co/ongtzongkeat@gmail.com" method="POST">
         <h1>Get in touch with me</h1>
         <input type="text" name="name" class="form-control" rows="2" placeholder="Your Full Name" required>
-
+        
         <div>
             <textarea placeholder="Your message" class="form-control2" name="message" rows="10" required></textarea>
         </div>
         <button type="submit" class="button">Submit Form</button>
     </form>
-    
+
 </body>
 </html>
 
 
 <style>
+    #idLinkedInIcon {
+        background-color: rgb(0, 102, 170);
+        border-radius: 6px;
+        color: white;
+        cursor: pointer;
+        display: inline-block;
+        font: bold 35px Arial, Helvetica, sans-serif;
+        height: 34px;
+        margin-top: 1px;
+        text-align: center;
+        width: 34px;
+    }
+
+        #idLinkedInIcon:hover {
+            background-color: #06d;
+        }
     .contain {
         display: flex;
         align-items: center;
@@ -90,9 +108,10 @@
     }
 
     #socials {
+        display:grid;
         text-align: left;
         width: 450px;
-        margin-left: 35%;
+        margin-left: 37%;
         margin-top: 100px;
         color: black;
         background-color: transparent;
@@ -110,9 +129,8 @@
         }
 
     #aboutme {
-        margin-left: 45%;
+        margin-left: 37%;
         text-align: left;
-        margin-left: 36.5%;
         width: 450px;
         color: black;
         background-color: transparent
@@ -184,3 +202,20 @@
             margin-left: 1rem;
         }
 </style>
+
+<script>
+    var text = ["HTML", "CSS", "JavaScript", "C#", "Angular"];
+    var counter = 0;
+    var elem = document.getElementById("changeText");
+    var inst = setInterval(change, 2000);
+
+    function change() {
+        elem.innerHTML = text[counter];
+        counter++;
+        if (counter >= text.length) {
+            counter = 0;
+
+        }
+    }
+
+</script>
